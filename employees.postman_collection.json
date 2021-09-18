@@ -1,0 +1,309 @@
+{
+	"info": {
+		"_postman_id": "7914b7fd-a4f2-4a62-b585-9400baf4c1cc",
+		"name": "employees",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Consulente",
+			"item": [
+				{
+					"name": "Get all consulenti",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"nome utente\",\r\n    \"cognome\": \"cognome utente\",\r\n    \"password\": \"password utente\",\r\n    \"indirizzo\": \"indirizzo utente\",\r\n    \"tipo\": \"tipo utente 1\",\r\n    \"attivo\": \"true\"    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/consulente/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"consulente",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findByTariffaAndOreLavorate",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/consulente/findByTariffaAndOreLavorate?tariffa=5000&oreLavorate=300",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"consulente",
+								"findByTariffaAndOreLavorate"
+							],
+							"query": [
+								{
+									"key": "tariffa",
+									"value": "5000"
+								},
+								{
+									"key": "oreLavorate",
+									"value": "300"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Utente",
+			"item": [
+				{
+					"name": "Get all utenti",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"nome utente\",\r\n    \"cognome\": \"cognome utente\",\r\n    \"password\": \"password utente\",\r\n    \"indirizzo\": \"indirizzo utente\",\r\n    \"tipo\": \"tipo utente 1\",\r\n    \"attivo\": \"true\"    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/utente/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"utente",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Creazione utente",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"nome utente\",\r\n    \"cognome\": \"cognome utente\",\r\n    \"password\": \"password utente\",\r\n    \"indirizzo\": \"indirizzo utente\",\r\n    \"tipo\": \"tipo utente 1\",\r\n    \"attivo\": \"true\"    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/utente/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"utente",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Aggiornamento dei dati di un utente",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"nome utente 2\",\r\n    \"cognome\": \"cognome utente 2\",\r\n    \"password\": \"password utente 2\",\r\n    \"indirizzo\": \"indirizzo utente 2\",\r\n    \"tipo\": \"tipo utente 1\",\r\n    \"attivo\": \"true\"    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/utente/7",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"utente",
+								"7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Ricerca utente per id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"nome utente\",\r\n    \"cognome\": \"cognome utente\",\r\n    \"password\": \"password utente\",\r\n    \"indirizzo\": \"indirizzo utente\",\r\n    \"tipo\": \"tipo utente 1\",\r\n    \"attivo\": \"true\"    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/utente/7",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"utente",
+								"7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Ricerca utente per tipo",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"nome utente\",\r\n    \"cognome\": \"cognome utente\",\r\n    \"password\": \"password utente\",\r\n    \"indirizzo\": \"indirizzo utente\",\r\n    \"tipo\": \"tipo utente 1\",\r\n    \"attivo\": \"true\"    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/utente/ricercaPerTipo?tipo=tipo1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"utente",
+								"ricercaPerTipo"
+							],
+							"query": [
+								{
+									"key": "tipo",
+									"value": "tipo1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cancellazione utente per nome+cognome",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"nome utente\",\r\n    \"cognome\": \"cognome utente\",\r\n    \"password\": \"password utente\",\r\n    \"indirizzo\": \"indirizzo utente\",\r\n    \"tipo\": \"tipo utente 1\",\r\n    \"attivo\": \"true\"    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/utente/7",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"utente",
+								"7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cancellazione utente per id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"nome utente\",\r\n    \"cognome\": \"cognome utente\",\r\n    \"password\": \"password utente\",\r\n    \"indirizzo\": \"indirizzo utente\",\r\n    \"tipo\": \"tipo utente 1\",\r\n    \"attivo\": \"true\"    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/utente/deleteByNomeAndCognome?nome=nomeUtente&cognome=cognomeUtente",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"utente",
+								"deleteByNomeAndCognome"
+							],
+							"query": [
+								{
+									"key": "nome",
+									"value": "nomeUtente"
+								},
+								{
+									"key": "cognome",
+									"value": "cognomeUtente"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
